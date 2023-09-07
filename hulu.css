@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Rubik:wght@300;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+font-family: 'Rubik', sans-serif;
+background: #000;
+color: #fff;
+line-height: 1.7;
+overflow-x: hidden;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+h4 {
+color: #00ed28;
+font-size: 14px;
+text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: rgb(4, 4, 5);
+    min-width: 135px;
+    padding: 20px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color:
+            RGBA(28, 231, 131, 0.8)
+}
+.btn-cta:hover {
+    opacity: 0.8;
+}
+
+.header {
+ height: 530px;
+ background: url(./assets/images/hulu-1-bg.jpeg);
+ background-repeat: no-repeat center center / cover;
+ display: flex; 
+ align-items: center;
+ justify-content: center;  
+}
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 180px;
+    z-index: 1;
+
+}
+.live {
+
+}
+
+
+.header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+    z-index: 2;
+    position: relative;
+}
+
+.header nav .login-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header .logo {
+    width: 270px;
+    margin: 20px 0;
+}
+.header .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+.header .header-text-1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.header .header-text-2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+@media (max-width:768px) {
+    .header .logo {
+        width: 200px;
+    }
+    .header .header-content {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+.sub-header {
+   text-align: center;
+  & span {
+    color: #00ed28;
+    margin-bottom: 40px;
+  }
+  & h1 {
+    margin-bottom: 40px;
+    margin-top: 10px;
+  } 
+  & p {
+    margin-bottom: 40px;
+  } 
+}
+
+.text-xl{
+ font-size: 48px;
+ font-weight: 600;   
+}
+
+.sub-text {
+    max-width: 850px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 90px 40px;
+    justify-content: center;
+}
+
+/* .categories .sub-title {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: ;
+} */
+
+.categories .covers > div {
+    height: 500px;
+    width: 300px;
+    position: relative;
+}
+.categories .cover-grad {
+    background: linear-gradient(
+        156,82deg,
+        rgba(0, 0, 0, 0.6) 4.58%
+        rgba(0, 0, 0, 0) 69.61% 
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2)) 4.71%, rgba(0, 0, 0, 0,)
+    (71.49%)
+}
+.categories .cover {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 1100px;
+}
+
+.cover {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.categories .cover-text {
+    position: absolute;
+    padding-left: 30px;
+}
+
+
+
+.categories .cover-1 {
+ background: url(./assets/images/hulu-card-1.png) no-repeat center center / cover;
+}
+ .categories .cover-2 {
+background: url(./assets/images/hulu-card-2.jpeg) no-repeat center center / cover;
+}
+ .categories .cover-3 {
+ background: url(./assets/images/hulu-card-3.png) no-repeat center center / cover;
+ }
+.categories .cover-4 {
+ background: url(./assets/images/hulu-card-4.png) no-repeat center center / cover;
+}
+.live {
+    background: #151516;
+    padding: 40px;
+}
+.live-border {
+  border-radius: 16px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  justify-content: center;
+   text-align: center; 
+}
+.live a {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+/* Live sports */
+.live-sports {
+    background: url(./assets/images/hulu-2-bg.jpeg) no-repeat center center / cover;
+    height: 800px;
+    position: relative;
+}
+.live-sports-content {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    max-width: 550px;
+}
+.live-sports-logos {
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.live-sports-logos > div {
+    background:url(./assets/images/small-bg-1.png) no-repeat center center / cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.live-sports-logos img {
+    width: 40px;
+}
+.live-sports-content {
+    top: 30px;
+    left: 30px;
+    margin-top: 60px;
+}
