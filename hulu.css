@@ -266,3 +266,37 @@ background: url(./assets/images/hulu-card-2.jpeg) no-repeat center center / cove
     left: 30px;
     margin-top: 60px;
 }
+
+.table_page{
+     display: flex;
+    flex-direction: column;
+     align-items: center;
+    text-align: center;
+ padding: 90px 40px;
+ justify-content: center;
+ & h1{
+ font-size: 48px
+ }
+ & p{
+ font-size: 18px;
+ max-width: 600px;
+ }
+}
+
+.third-party{
+    display: flex;
+align-items: center;
+    & sub-img{
+        width: 100px;
+        height: 0px;
+    }
+}
+.table-settings {
+padding: 80px 80px;
+text-decoration: overline;
+margin-top: 2px;
+}
+.tab_img{
+padding-left: 40px;
+width: 20px;
+}
